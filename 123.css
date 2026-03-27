@@ -56,3 +56,34 @@ a:hover,a:active
 	background-color:#7A991A;
 	border-radius: 25px ;
 }
+.a{
+margin:20px 0;
+padding:35px 30px 30px 30px;
+background-color:#fbf9cc;
+}
+
+#top
+{
+	position:fixed;
+	bottom:5px;
+	right:5px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #7c5d48;
+  border-bottom: 2px solid #7c5d48;
+  background-color: rgba(255,255,255,0.42);
+  padding: 12px 0px 10px;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+header nav ul li a:hover {
+  text-decoration: underline double;
+}
