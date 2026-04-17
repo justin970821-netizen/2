@@ -1,0 +1,11 @@
+// I am a Comment. I do Nothing
+
+// How to Declare variables:
+let x = 5;
+const y = 6; 
+// y = 10; 會出現錯誤
+// How to Compute values:
+let z = x + y;
+
+// How to Output values:
+console.log("hello world");
