@@ -1,11 +1,13 @@
 function showInfo(type) {
     const data = {
-        evaporation: ["蒸發", "水變成水蒸氣上升，是水循環的開始。"],
-        condensation: ["凝結", "水蒸氣冷卻形成雲。"],
-        precipitation: ["降水", "水從雲中落下形成雨或雪。"],
-        runoff: ["地表逕流", "水沿地表流動回到海洋。"],
-        infiltration: ["滲透", "水滲入地下形成地下水。"]
-    };
+    evaporation: ["蒸發", "水變成水蒸氣上升，是水循環的開始。"],
+    condensation: ["凝結", "水蒸氣冷卻形成雲。"],
+    precipitation: ["降水", "水從雲中落下形成雨或雪。"],
+    runoff: ["地表逕流", "水沿地表流動回到海洋。"],
+    infiltration: ["滲透", "水滲入地下形成地下水。"],
+    transpiration: ["蒸散", "植物將水分釋放到空氣中。"],
+    groundwater: ["地下水流", "地下水在岩層中緩慢流動。"]
+};
 
     document.getElementById("infoTitle").innerText = data[type][0];
     document.getElementById("infoText").innerText = data[type][1];
