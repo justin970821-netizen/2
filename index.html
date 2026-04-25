@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>互動水文學</title>
+<title>水文學互動網站</title>
 
 <link href="style.css" rel="stylesheet">
 </head>
@@ -12,25 +12,92 @@
 <body>
 
 <header>
-    <h1>🌊 互動水循環系統</h1>
-    <p>滑鼠移上或點擊圖中的各個過程</p>
+    <h1>🌊 水文學互動學習網站</h1>
+    <p>點擊圖片探索水循環的每個過程</p>
 </header>
 
 <main>
 
+<section class="content">
+<h2>水文學是什麼？</h2>
+<p>
+水文學（Hydrology）是研究地球上水的來源、分布、循環與變化的科學。
+它不只關注水在哪裡，更研究水如何流動、如何影響環境與人類生活。
+</p>
+<p>
+在自然界中，水不斷透過不同型態轉換，例如液態、氣態與固態，
+並透過水循環持續運動。水文學家透過觀測與模型分析，
+來預測洪水、乾旱以及水資源變化。
+</p>
+</section>
+
+<section class="content">
+<h2>互動水循環圖</h2>
+
 <div class="image-container">
+    <img src="water-cycle.jpg" id="cycleImage">
 
-    <!-- 水循環圖片 -->
-    <img src="water-cycle.jpeg" alt="水循環圖">
-
-    <!-- 可點擊區域 -->
-    <div class="hotspot" style="top:20%; left:15%;" onclick="showInfo('evaporation')" title="蒸發"></div>
-    <div class="hotspot" style="top:15%; left:45%;" onclick="showInfo('condensation')" title="凝結"></div>
-    <div class="hotspot" style="top:25%; left:75%;" onclick="showInfo('precipitation')" title="降水"></div>
-    <div class="hotspot" style="top:55%; left:70%;" onclick="showInfo('runoff')" title="地表逕流"></div>
-    <div class="hotspot" style="top:65%; left:50%;" onclick="showInfo('infiltration')" title="滲透"></div>
-
+    <!-- 熱點（百分比定位，比較穩） -->
+    <div class="hotspot" style="top:22%; left:18%;" onclick="showInfo('evaporation')"></div>
+    <div class="hotspot" style="top:18%; left:50%;" onclick="showInfo('condensation')"></div>
+    <div class="hotspot" style="top:30%; left:80%;" onclick="showInfo('precipitation')"></div>
+    <div class="hotspot" style="top:60%; left:70%;" onclick="showInfo('runoff')"></div>
+    <div class="hotspot" style="top:70%; left:50%;" onclick="showInfo('infiltration')"></div>
 </div>
+
+</section>
+
+<!-- 詳細內容（大量內文） -->
+<section class="content">
+<h2>水循環詳細解析</h2>
+
+<h3>1. 蒸發（Evaporation）</h3>
+<p>
+蒸發是水從液態轉變為氣態的過程，通常發生在海洋、湖泊與河流表面。
+太陽提供能量，使水分子運動加快並逃逸到空氣中。
+這個過程在熱帶地區特別明顯，也是水循環的起點之一。
+</p>
+
+<h3>2. 凝結（Condensation）</h3>
+<p>
+當水蒸氣上升至高空並遇到較低溫度時，會凝結成微小水滴，
+形成雲。這些水滴會聚集，最終導致降水。
+</p>
+
+<h3>3. 降水（Precipitation）</h3>
+<p>
+當雲中的水滴變大且重量增加時，就會以雨、雪或冰雹的形式落下。
+降水是補充地表水與地下水的主要來源。
+</p>
+
+<h3>4. 地表逕流（Runoff）</h3>
+<p>
+降水落到地面後，部分水會沿著地表流動，
+形成溪流、河川，最終流入海洋。
+</p>
+
+<h3>5. 滲透（Infiltration）</h3>
+<p>
+另一部分水會滲入土壤，成為地下水，
+供植物吸收或形成地下水系統。
+</p>
+
+</section>
+
+<section class="content">
+<h2>水文學的重要性</h2>
+<p>
+水文學對現代社會具有極高價值。透過水文分析，
+我們可以預測洪水、設計排水系統、管理水庫，
+並確保水資源的永續利用。
+</p>
+<p>
+此外，在氣候變遷的影響下，降雨模式變得更加不穩定，
+水文學研究變得更加重要，能幫助人類適應未來環境變化。
+</p>
+</section>
+
+</main>
 
 <!-- 資訊框 -->
 <div id="infoBox" class="info-box">
@@ -38,8 +105,6 @@
     <h2 id="infoTitle"></h2>
     <p id="infoText"></p>
 </div>
-
-</main>
 
 <script src="script.js"></script>
 
