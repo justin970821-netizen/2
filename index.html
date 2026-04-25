@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>水文學介紹</title>
-    <link href="index.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>互動水文學</title>
+
+<link href="index.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>水文學（Hydrology）</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#intro">簡介</a></li>
-            <li><a href="#cycle">水循環</a></li>
-            <li><a href="#importance">重要性</a></li>
-        </ul>
-    </nav>
+<header>
+    <h1>🌊 互動水循環系統</h1>
+    <p>滑鼠移上或點擊圖中的各個過程</p>
+</header>
 
-    <main>
-        <section id="intro">
-            <h2>什麼是水文學？</h2>
-            <p>
-                水文學是研究地球上水的分布、運動與性質的科學，
-                包含降雨、河川流動、地下水與蒸發等過程。
-            </p>
-        </section>
+<main>
 
-        <section id="cycle">
-            <h2>水循環</h2>
-            <p>
-                水循環描述水在地球上的不斷循環，包括蒸發、凝結、
-                降水與滲透等過程，是自然界重要的循環系統之一。
-            </p>
-        </section>
+<div class="image-container">
 
-        <section id="importance">
-            <h2>水文學的重要性</h2>
-            <p>
-                水文學對於水資源管理、防洪、農業灌溉以及氣候研究
-                都具有重要的影響。
-            </p>
-        </section>
-    </main>
+    <!-- 水循環圖片 -->
+    <img src="water-cycle.jpeg" alt="水循環圖">
 
-    <footer>
-        <p>© 2026 水文學介紹</p>
-    </footer>
+    <!-- 可點擊區域 -->
+    <div class="hotspot" style="top:20%; left:15%;" onclick="showInfo('evaporation')" title="蒸發"></div>
+    <div class="hotspot" style="top:15%; left:45%;" onclick="showInfo('condensation')" title="凝結"></div>
+    <div class="hotspot" style="top:25%; left:75%;" onclick="showInfo('precipitation')" title="降水"></div>
+    <div class="hotspot" style="top:55%; left:70%;" onclick="showInfo('runoff')" title="地表逕流"></div>
+    <div class="hotspot" style="top:65%; left:50%;" onclick="showInfo('infiltration')" title="滲透"></div>
+
+</div>
+
+<!-- 資訊框 -->
+<div id="infoBox" class="info-box">
+    <span onclick="closeInfo()" class="close-btn">✖</span>
+    <h2 id="infoTitle"></h2>
+    <p id="infoText"></p>
+</div>
+
+</main>
+
+<script src="index.js"></script>
+
 </body>
 </html>

@@ -1,52 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Microsoft JhengHei", sans-serif;
     margin: 0;
-    background-color: #f0f8ff;
+    background: #eef6fb;
+    text-align: center;
 }
 
 header {
-    background-color: #0077b6;
+    background: linear-gradient(to right, #0077b6, #00b4d8);
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
-nav {
-    background-color: #023e8a;
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+.image-container img {
+    width: 800px;
+    max-width: 90%;
+    border-radius: 10px;
 }
 
-nav li {
-    margin: 0 15px;
+/* 熱點 */
+.hotspot {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,0,0,0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.hotspot:hover {
+    transform: scale(1.3);
+    background: rgba(255,0,0,0.9);
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
+/* 資訊框 */
+.info-box {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
     padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: left;
 }
 
-section {
-    margin-bottom: 30px;
-}
-
-footer {
-    background-color: #0077b6;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.close-btn {
+    float: right;
+    cursor: pointer;
+    color: red;
 }
